@@ -21,6 +21,7 @@ The generated password will either be displayed in an alert or written directly 
 
 ![alt text](screenshot.png)
 
+Deployment Link:
 https://rachelcodes42.github.io/password-generator/ 
 
 ## Credits
