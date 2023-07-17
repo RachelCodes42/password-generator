@@ -38,24 +38,22 @@ function writePassword() {
 
   // Function to handle the generate button click event
   function handleGenerateButtonClick() {
-    var length = 12; // default password length
-    var includeLowercase = true;
-    var includeUppercase = true;
-    var includeNumbers = true;
-    var includeSpecialChars = false;
+ 
 
     // Prompt the user for password criteria
     length = parseInt(prompt("Enter password length:"));
+    
+     // Validate the password criteria
+    if (isNaN(length) || length < 8 || length > 128) {
+      alert("Invalid password length. Please enter a number between 8 and 128.");
+      return;
+    }
     includeLowercase = confirm("Include lowercase characters?");
     includeUppercase = confirm("Include uppercase characters?");
     includeNumbers = confirm("Include numbers?");
     includeSpecialChars = confirm("Include special characters?");
 
-    // Validate the password criteria
-    if (isNaN(length) || length < 8 || length > 128) {
-      alert("Invalid password length. Please enter a number between 8 and 128.");
-      return;
-    }
+   
 
     if (!includeLowercase && !includeUppercase && !includeNumbers && !includeSpecialChars) {
       alert("You must include at least one character type in the password.");
