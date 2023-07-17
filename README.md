@@ -19,6 +19,9 @@ Confirm whether you want to include lowercase, uppercase, numeric, and/or specia
 Once you answer all the prompts, a password will be generated that matches your selected criteria.
 The generated password will either be displayed in an alert or written directly on the page.
 
+![alt text](screenshot.png)
+
+https://rachelcodes42.github.io/password-generator/ 
 
 ## Credits
 
